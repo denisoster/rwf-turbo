@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <%= rwf_head() %>
+        <link
+            href="/static/css/bootstrap.min.css"
+            rel="stylesheet"
+        >
+        <% if title %>
+        <title><%= title %></title>
+        <% end %>
+
+        <script type="module" src="/static/js/main.js" async></script>
+    </head>
+
+    <body data-bs-theme="dark">
+        <%= rwf_turbo_stream("/turbo-stream") %>

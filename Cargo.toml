@@ -1,0 +1,17 @@
+[package]
+name = "turbo"
+version = "0.1.0"
+edition = "2021"
+default-run = "turbo"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rwf = "0.2.1"
+tokio = { version = "1", features = ["full"]}
+tracing = "*"
+rand = "0.8"
+serde_json = "1"
+serde = "1"
+time = "0.3"
+rwf-admin = "0.1.12"
